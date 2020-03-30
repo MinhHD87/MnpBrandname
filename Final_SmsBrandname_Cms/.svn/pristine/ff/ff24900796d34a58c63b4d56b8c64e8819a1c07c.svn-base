@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <context-param>
+        <description>Config</description>
+        <param-name>config</param-name>
+        <param-value>/WEB-INF/classes/gk/myname/vn/config</param-value>
+    </context-param>
+    <filter>
+        <filter-name>UrlRewriteFilter</filter-name>
+        <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+        <!-- sets up amount conf file will be checked for reload
+        can be a valid integer (0 denotes check every time,
+        empty/not set denotes no reload check)          -->
+        <init-param>
+            <param-name>confReloadCheckInterval</param-name>
+            <param-value>30</param-value>
+        </init-param>
+<!--                <init-param>
+            <param-name>logLevel</param-name>
+            <param-value>DEBUG</param-value>
+        </init-param>-->
+    </filter>
+    <!--    END reWrite-->
+    <!--  END  CKFinder-->
+    <servlet>
+        <servlet-name>Capcha</servlet-name>
+        <servlet-class>gk.myname.vn.config.Capcha</servlet-class>
+    </servlet>
+    <listener>
+        <listener-class>gk.myname.vn.config.MyContext</listener-class>
+    </listener>
+    <servlet-mapping>
+        <servlet-name>Capcha</servlet-name>
+        <url-pattern>/Capcha</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            15
+        </session-timeout>
+    </session-config>
+<!--    <error-page>        
+        <error-code>404</error-code>
+        <location>/error_page/404.jsp</location>
+    </error-page>
+    <error-page>        
+        <error-code>500</error-code>
+        <location>/error_page/404.jsp</location>
+    </error-page>
+    <error-page>        
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/error_page/404.jsp</location>
+    </error-page>-->
+    <welcome-file-list>
+        <welcome-file>faces/index.xhtml</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

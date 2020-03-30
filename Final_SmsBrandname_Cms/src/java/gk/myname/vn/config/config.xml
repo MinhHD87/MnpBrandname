@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+    <category name="General">
+        <property name="DE_BUG" value="1" />
+        <property name="MAX_HOT" value="12" />
+        <property name="MAX_TOP" value="18" />
+        <property name="MAX_ROW_IN_CAT" value="12" />
+        <property name="URL_RELOAD" value="localhost:9981,localhost:9982,10.221.11.11:9983,10.221.11.11:9984" />
+        <property name="URL_FIREWALL" value="10.221.11.11:9983" />
+    </category>
+    <category name="EMAIL"> 
+        <property name="SMTP_MAIL" value="alert@ahp.vn" />
+        <property name="SMTP_PASS" value="ahp@alert.vn" />
+        <property name="MAIL_HOST" value="mail.ahp.vn" />
+        <property name="FROM_NAME" value="[HTC ALERT MAIL]" />
+        <property name="MAIL_DEBUG" value="true" />
+    </category>
+    
+</properties>

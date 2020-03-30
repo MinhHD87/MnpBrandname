@@ -1,0 +1,141 @@
+#popup_container {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	min-width: 400px; /* Dialog will be no smaller than this */
+/*	max-width: 600px;  Dialog will wrap after this width */
+	background: #FFF;
+	border: solid 8px #999;
+	color: #000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#popup_title {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 1.75em;
+	color: white;
+	background: #6D84B4; 
+	border-bottom: solid 1px #999;
+	cursor: default;
+	padding: 0 0 0 5px;
+	margin: 0em;
+}
+
+.popup_border {
+
+	border: solid 1px #3B5998;
+
+}
+
+
+#popup_content {
+	background: 16px 16px no-repeat url(../images/info.png);
+	padding: 1.55em 1.75em 2em 1.75em;
+	margin: 0em; 
+}
+#popup_content.form {
+background: none; 
+}
+
+#popup_content.form  #popup_message{
+ padding-left: 0;
+}
+
+#popup_content.alert {
+	background-image: url(../images/info.png);
+
+}
+
+#popup_content.confirm {
+	background-image: url(../images/important.png); 
+}
+
+#popup_content.prompt {
+	background-image: url(../images/help.png); 
+}
+ 
+#popup_content .tooltip {color: #bbb; text-decoration: none; font-size: 11px;}
+#popup_content  label{
+cursor: pointer;
+color: #666;
+font-weight: bold;
+vertical-align: middle;
+}
+
+#popup_message {
+	padding-left: 48px;
+}
+
+#popup_panel {
+	height: 38px;
+	 
+	background: #F2F2F2;
+	border-top: solid 1px #CCC;
+	text-align: center;
+	 
+}
+
+#popup_prompt {
+	margin: .5em 0em;
+}
+#popup_container  input[type="button"]  {
+float: right;
+cursor: pointer;
+white-space: nowrap;
+background-color: #DDD;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC));
+background-image: -webkit-linear-gradient(top, #EEE, #CCC);
+background-image: -moz-linear-gradient(top, #EEE, #CCC);
+background-image: -ms-linear-gradient(top, #EEE, #CCC);
+background-image: -o-linear-gradient(top, #EEE, #CCC);
+background-image: linear-gradient(top, #EEE, #CCC);
+border: 1px solid #777;
+padding: 0 1.5em;
+margin: 0.5em;
+font: bold 1em/2em Arial, Helvetica;
+text-decoration: none;
+color: #333;
+text-shadow: 0 1px 0 rgba(255, 255, 255, .8);
+-moz-border-radius: .2em;
+-webkit-border-radius: .2em;
+border-radius: .2em;
+-moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+-webkit-box-shadow: 0 0 1px 1px rgba(255, 255, 255, .8) inset, 0 1px 0 rgba(0, 0, 0, .3);
+box-shadow: 0 0 1px 1px rgba(255, 255, 255, .8) inset, 0 1px 0 rgba(0, 0, 0, .3);
+}
+ 
+#popup_container  input[type="button"]:hover {
+background-color: #EEE;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#DDD));
+background-image: -webkit-linear-gradient(top, #FAFAFA, #DDD);
+background-image: -moz-linear-gradient(top, #FAFAFA, #DDD);
+background-image: -ms-linear-gradient(top, #FAFAFA, #DDD);
+background-image: -o-linear-gradient(top, #FAFAFA, #DDD);
+background-image: linear-gradient(top, #FAFAFA, #DDD);
+}
+
+#popup_container  input[type="button"]:disabled {
+background: #EEE;
+color: #AAA;
+border-color: #AAA;
+cursor: default;
+text-shadow: none;
+position: static;
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+#popup_container .loading{display: none; padding: 0 1.5em;margin: 0.5em; float: right;}
+
+#popup_container  input[type="text"] {
+width: 200px;
+border: 1px solid #BDC7D8;
+font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+font-size: 11px;
+margin: 0;
+padding: 3px;
+-webkit-appearance: none;
+-webkit-border-radius: 0;}

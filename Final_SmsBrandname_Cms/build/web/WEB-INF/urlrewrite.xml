@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlrewrite>
+    <!--HOMEPAGE-->
+<!--    <rule match-type="regex">
+        <name>index</name>
+        <from>^(/)?$</from>
+        <to>/Notify.jsp</to>
+    </rule>-->
+<!--    <rule match-type="regex">
+        <name>index</name>
+        <from>^(/)?$</from>
+        <to>/customer/info/index.jsp</to>
+    </rule>    -->
+    <!-- ****************************** SYSTEM ADMIN ******************************--> 
+</urlrewrite>
